@@ -31,7 +31,7 @@ public class CtrlABMPersona {
 		return this.pers.get(this.pers.indexOf(p));
 	}
 	
-	//este metodo me parece que debería quitarse
+	//este metodo me parece que debería quitarse //para qué el comentario? borralo y listo
 	public Persona getByDni(String dni){
 		Persona p=new Persona();
 		p.setDni(dni);
