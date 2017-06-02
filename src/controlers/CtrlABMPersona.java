@@ -19,7 +19,6 @@ public class CtrlABMPersona {
 	}
 	
 	public void delete(Persona p){
-		//this.pers.remove(this.getByDni(p));
 		this.pers.remove(p);
 	}
 	
@@ -30,7 +29,6 @@ public class CtrlABMPersona {
 	
 	public Persona getByDni(Persona p){
 		return this.pers.get(this.pers.indexOf(p));
-		//return this.getByDni(p.getDni());
 	}
 	
 	//este metodo me parece que debería quitarse
@@ -38,14 +36,6 @@ public class CtrlABMPersona {
 		Persona p=new Persona();
 		p.setDni(dni);
 		return getByDni(p);
-		/*for (int i=0; i < this.pers.size(); i++){
-			if(pers.get(i).getDni().equals(dni)) {
-				return pers.get(i);
-				
-			}
-		}
-		return null; //ver error si falta
-		*/
 	}
 	
 	public Persona getByNombreApellido(Persona p){
@@ -56,7 +46,7 @@ public class CtrlABMPersona {
 				return pers.get(i);		
 			}
 		}
-		return null; //ver error si falta
+		return null;
 		
 	}
 	
